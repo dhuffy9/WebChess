@@ -24,35 +24,51 @@ body {
 
 .container #currentPlayer {
     text-align: center;
-    background-color: #80808075;
-    padding: 20px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
     margin-top: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 #currentPlayer h2 {
     margin: 0 0 15px 0;
-    color: #333;
+    color: #fff;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .player-info {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 #currentPlayer .color {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    border: 2px solid #333;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#currentPlayer .color:hover {
+    transform: scale(1.1);
 }
 
 .turn-text {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
-    color: #333;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .square{
