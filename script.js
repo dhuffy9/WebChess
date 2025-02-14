@@ -38,7 +38,7 @@ class Chess {
         square.className = 'square';
         square.id = this.letters[i] + this.numbers[j]
         let num = j + i;
-        let color = num % 2 === 0 ? '#fccc74' : '#573a2e';
+        let color = num % 2 === 0 ? '#e9c171' : '#b88b4a';
         square.style.backgroundColor = color;
         column.appendChild(square);
         // the element is need so we can change the color of the square
